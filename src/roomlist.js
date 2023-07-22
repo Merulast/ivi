@@ -113,20 +113,16 @@ function replaceNewRoomField() {
     .attr('list', 'default_channels')
     .change(function() {
       let v = $(this).val();
-      let option = $('#default_channels option').toArray().filter(el => $(el).val() == v);
+      let option = $('#default_channels option').toArray().filter(el => $(el).val() == v).pop();
 
       if(option) {
-        let val = $(option).data('value');
-        $(this).val(val);
-        $(this).attr('data-name', val);
+        $(this).val($(option).data('value'));
       }
     })
   .after($(`
     <datalist id="default_channels">
       ${rooms.join("\n")}
     </datalist>`));
-
-  //ipEl.remove();
 }
 
 /**
