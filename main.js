@@ -26,7 +26,7 @@ const _settings = {
   gbsound: true,
   preview: true,
   img_extensions: ['jpg','gif','png','mp4','jpeg','webm'],
-}
+};
 
 // Main
 (function() {
