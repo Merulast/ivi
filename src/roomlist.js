@@ -1,4 +1,4 @@
-const initChatRoomsPage = (page) => {
+const initRoomListPage = (page) => {
   $.support.transition = false;
   
   addRoomListStyle();

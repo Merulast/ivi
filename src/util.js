@@ -1,3 +1,20 @@
+let cssReferences = {};
+let settings = {};
+let cache = {};
+
+function loadCache() {
+    const key = 'cache';
+
+    try {
+      let raw = localStorage.getItem('ivi:'+key);
+      let values = JSON.parse(raw) || {};
+      cache = storageProxy(key, values);
+    } catch(e) {
+      console.log(e);
+      cache = storageProxy(key, {});
+    }
+}
+
 const parseGbContent = (data) => {
   var dom = new DOMParser().parseFromString(data, "text/html");
   let nodes = [...dom.documentElement.querySelectorAll('.entry')];

@@ -1,5 +1,19 @@
+const content = $('#content');
+const chatSettings = $('.chat-settings div');
+const hexColorExpr = /^[0-9a-f]{3,6}$/i;
+
+let roomMembers = {};
+let inputHistory = [];
+let historyCursor = 0;
+let friendInterval = null;
+let autoCompleteState = { word: '', index: 0 };
+
+// original list of websocket handlers
+const originalWsHandlers = {}
+
 const initRoomPage = () => {
   const injectp = ws._settings.events;
+  myNickname = $('.navbar-right .navbar-text a').text();
 
   saveWsHandlers();
   moreSettings();
