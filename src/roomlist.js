@@ -116,7 +116,9 @@ function replaceNewRoomField() {
       let option = $('#default_channels option').toArray().filter(el => $(el).val() == v);
 
       if(option) {
-        $(this).val( $(option).data('value'));
+        let val = $(option).data('value');
+        $(this).val(val);
+        $(this).attr('data-name', val);
       }
     })
   .after($(`
