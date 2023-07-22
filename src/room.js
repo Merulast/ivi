@@ -11,10 +11,11 @@ let autoCompleteState = { word: '', index: 0 };
 // original list of websocket handlers
 const originalWsHandlers = {}
 
-const initRoomPage = () => {
+const initRoomPage = async() => {
   const injectp = ws._settings.events;
   myNickname = $('.navbar-right .navbar-text a').text();
 
+  await loadSettings();
   saveWsHandlers();
   moreSettings();
   updateColorSettings();

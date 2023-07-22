@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Seals with Ivi
-// @namespace    https://gist.github.com/Merulast
+// @namespace    https://github.com/Merulast/ivi
+// @updateURL    https://raw.githubusercontent.com/Merulast/ivi/main/main.js
 // @version      0.10
 // @description  Seal of Fantasy Extension
 // @author       Merula Fideley
@@ -16,7 +17,7 @@
 // @grant        none
 // ==/UserScript==
 
-const c = location.href.split('=').pop();
+const c = location.href.split('=').pop().split('#')[0];
 let myNickname;
 
 // initial settings
@@ -29,10 +30,10 @@ const _settings = {
 
 // Main
 (function() {
+    console.log('Ivi!');
     const page = location.href.replace('https://sealoffantasy.de', '').split('?')[0];
 
     loadCache();
-    loadSettings();
 
     // switch mode
     if(page==='/chat/room') initRoomPage(page);
