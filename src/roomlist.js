@@ -253,7 +253,7 @@ function addJoinLinks() {
     e.preventDefault();
     $.ajax({
             method: "POST",
-            url: 'https://sealoffantasy.de/chat/ajax/join?c=0',
+            url: 'https://sealoffantasy.de/chat/ajax/join?c='+c,
             data: {"roomname":$(this).data('name')},
             success: didGetJoinResponse
           });
