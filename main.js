@@ -2,18 +2,18 @@
 // @name         Seals with Ivi
 // @namespace    https://github.com/Merulast/ivi
 // @updateURL    https://raw.githubusercontent.com/Merulast/ivi/main/main.js
-// @version      0.10
+// @version      0.11
 // @description  Seal of Fantasy Extension
 // @author       Merula Fideley
 // @match        https://sealoffantasy.de/*
 // @icon         https://i.imgur.com/3OCGPeb.png
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/loaders.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/util.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/guestbook.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/wall.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/dialog.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/room.js?1
-// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/roomlist.js?1
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/loaders.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/util.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/guestbook.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/wall.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/dialog.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/room.js?11
+// @require      https://raw.githubusercontent.com/Merulast/ivi/main/src/roomlist.js?11
 // @grant        none
 // ==/UserScript==
 
