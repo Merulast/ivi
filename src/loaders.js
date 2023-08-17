@@ -1,7 +1,8 @@
 /** trys to get the current charactername and returns it **/
 const whoAmI = async() => {
+  if(!c) return null;
   let _c = parseInt(c);
-  if(_c!==0 || !_c || !Number.isInteger(_c)) return null;
+  if(!Number.isInteger(_c) || c != _c) return c;
   let resp = await fetch('https://sealoffantasy.de/guestbook/view/?c='+c);
   let dom = new DOMParser().parseFromString(await resp.text(), "text/html");
   let el = dom.documentElement.querySelector('.navbar-header a');
