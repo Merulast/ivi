@@ -51,14 +51,14 @@ const initWallHandler = () => {
     // append posts
     for(let entry of entries) {
       // detect deleted messages and prepare dummys
-      if(lastWallId && lastWallId-entry.id > 1) {
+      /*if(lastWallId && lastWallId-entry.id > 1) {
         for(var i=lastWallId-1; i>entry.id; i--) {
           let el = missingWallEntryElement({id: i});
           $('#wall-entries').append(el);
           addFlenny(i, el);
           posts[entry.id] = {data: {id: i}, element: el};
         }
-      }
+      }/**/
       lastWallId = entry.id;
 
       let el = wallEntryElement(entry);
