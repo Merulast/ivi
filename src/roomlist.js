@@ -300,7 +300,11 @@ function buildOtherServerPanel(srvs) {
   let panel = panelElement(key, '');
 
   // headline
-  const roomc = srvs.map(el => el.rooms.length).push(0).push(0).reduce((a,b) => a+b);
+  let roomc = 0;
+  try {
+    room = srvs.map(el => el.rooms.length).reduce((a,b) => a+b);
+  } catch(e) {}
+  
   const label = `${srvs.length} andere Server (${roomc} Räume)`;
   panel.find(`.h5`).html(label);
 
